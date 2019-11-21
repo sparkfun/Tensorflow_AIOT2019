@@ -15,7 +15,7 @@ lis2dh12_ctx_t dev_ctx;
 
 am_hal_iom_transfer_t iomTransferDefault = 
 {
-    .uPeerInfo.ui32I2CDevAddr = AM_BSP_I2C_ACCELEROMETER_ADDRESS,
+    .uPeerInfo.ui32I2CDevAddr = AM_BSP_ACCELEROMETER_I2C_ADDRESS,
     .ui32InstrLen = 0, // 0 -- 8-bit transfers
     .ui32Instr = 0, // offset
     .ui32NumBytes = 1,
@@ -41,7 +41,7 @@ static void platform_init(void);
 // int initAccelerometer(void)
 // {
 //     void * iomHandle;
-//     uint32_t iom = AM_BSP_I2C_ACCELEROMETER_IOM; // IO module 4 -- switch to 3 if using IOM3
+//     uint32_t iom = AM_BSP_ACCELEROMETER_I2C_IOM; // IO module 4 -- switch to 3 if using IOM3
 //     uint32_t retVal32 = 0;
 //     uint32_t i2cTX[2] = {0, 0}; // WHO_AM_I register
 //     uint32_t i2cRX[1] = {0};
@@ -67,8 +67,8 @@ static void platform_init(void);
 //     //
 //     // Configure the IOM pins.
 //     //
-//     am_hal_gpio_pinconfig(AM_BSP_I2C_ACCELEROMETER_SDA_PIN,  g_AM_BSP_GPIO_IOM4_SCL); // 39
-//     am_hal_gpio_pinconfig(AM_BSP_I2C_ACCELEROMETER_SCL_PIN,  g_AM_BSP_GPIO_IOM4_SDA); // 40
+//     am_hal_gpio_pinconfig(AM_BSP_ACCELEROMETER_I2C_SDA_PIN,  g_AM_BSP_GPIO_IOM4_SCL); // 39
+//     am_hal_gpio_pinconfig(AM_BSP_ACCELEROMETER_I2C_SCL_PIN,  g_AM_BSP_GPIO_IOM4_SDA); // 40
 
 //     //
 //     // Enable the IOM.
@@ -333,8 +333,8 @@ static int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp,
 
     // Change direction, and add the rx buffer
     iomTransfer.eDirection = AM_HAL_IOM_RX;
-    iomTransfer.pui32RxBuffer = bufp;       // Link in the RX buffer
-    iomTransfer.ui32NumBytes = len;         // How many bytes to receive
+    iomTransfer.pui32RxBuffer = (uint32_t*)bufp;    // Link in the RX buffer
+    iomTransfer.ui32NumBytes = len;                 // How many bytes to receive
     iomTransfer.bContinue = false;
     
     retVal32 = am_hal_iom_blocking_transfer(iomHandle, &iomTransfer);
@@ -361,7 +361,7 @@ static void platform_init(void)
     };
 
     // Initialize the IOM.
-    retVal32 = am_hal_iom_initialize(AM_BSP_I2C_ACCELEROMETER_IOM, &iomHandle);
+    retVal32 = am_hal_iom_initialize(AM_BSP_ACCELEROMETER_I2C_IOM, &iomHandle);
     if (retVal32 != AM_HAL_STATUS_SUCCESS) return; // -1;
 
     retVal32 = am_hal_iom_power_ctrl(iomHandle, AM_HAL_SYSCTRL_WAKE, false);
@@ -375,8 +375,8 @@ static void platform_init(void)
     //
     // Configure the IOM pins.
     //
-    am_hal_gpio_pinconfig(AM_BSP_I2C_ACCELEROMETER_SDA_PIN,  g_AM_BSP_GPIO_IOM4_SCL); // 39
-    am_hal_gpio_pinconfig(AM_BSP_I2C_ACCELEROMETER_SCL_PIN,  g_AM_BSP_GPIO_IOM4_SDA); // 40
+    am_hal_gpio_pinconfig(AM_BSP_ACCELEROMETER_I2C_SDA_PIN,  g_AM_BSP_GPIO_IOM4_SCL); // 39
+    am_hal_gpio_pinconfig(AM_BSP_ACCELEROMETER_I2C_SCL_PIN,  g_AM_BSP_GPIO_IOM4_SDA); // 40
 
     //
     // Enable the IOM.

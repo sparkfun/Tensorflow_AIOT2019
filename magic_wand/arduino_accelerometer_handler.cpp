@@ -59,12 +59,12 @@ TfLiteStatus SetupAccelerometer(tflite::ErrorReporter* error_reporter) {
 
   if (lis2dh12_fifo_mode_set(&dev_ctx, LIS2DH12_BYPASS_MODE)) {
     error_reporter->Report("Failed to clear FIFO buffer.");
-    return 0;
+    return (TfLiteStatus)0;
   }
 
   if (lis2dh12_fifo_mode_set(&dev_ctx, LIS2DH12_DYNAMIC_STREAM_MODE)) {
     error_reporter->Report("Failed to set streaming mode.");
-    return 0;
+    return (TfLiteStatus)0;
   }
 
   error_reporter->Report("Magic starts!");
