@@ -62,14 +62,14 @@ To install this library, use the following steps:
 
 Load the SparkFun Boards package into the Arduino Board Manger.
 
+<img src="resource/BoardPacakgeURL.png"  align="right" width=500>
+
 To install package, use the following steps:
 
 * In Arduino, open the Preferences menu item. ***File > Preferences***, (macOS) ***Arduino > Preferences***
 * Add the following path to the ***Additional Boards Manager URLs:*** path in preferences.
 
   ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
-
-<img src="resource/BoardPacakgeURL.png"  align="right" width=500>
 
 * Select the ***OK*** button to save the preferences.
 
