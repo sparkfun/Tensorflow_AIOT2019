@@ -60,8 +60,6 @@ To install this library, use the following steps:
 
 ### Install the SparkFun Boards Package
 
-<img src="resource/TFL_Install.png"  align="right" width=200>
-
 Load the SparkFun Boards package into the Arduino Board Manger.
 
 To install package, use the following steps:
@@ -69,11 +67,11 @@ To install package, use the following steps:
 * In Arduino, open the Preferences menu item. ***File > Preferences***, (macOS) ***Arduino > Preferences***
 * Add the following path to the ***Additional Boards Manager URLs:*** path in preferences.
 
-Copy this URL: ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
+Copy: ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
 
 * Select the ***OK*** button to save the preferences.
 
-
+<img src="resource/BoardPacakgeURL.png"  width=500 alight="right">
 
 
 Getting Started
