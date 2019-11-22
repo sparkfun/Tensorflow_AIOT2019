@@ -19,17 +19,25 @@ The following examples are included in the repository:
 
 Required Hardware
 -----------------
+
 To run the examples, the following hardware is required:
 * [SparkFun Edge Development breakout board](https://www.sparkfun.com/products/15170)
 * [Himax CMOS Imaging Camera – HM01B0](https://www.sparkfun.com/products/15570)
 * [SparkFun Serial Basic Breakout](https://www.sparkfun.com/products/14050) or [SparkFun Serial Basic Breakout USB-C](https://www.sparkfun.com/products/15096)
 * [USB-A to micro-B cable](https://www.sparkfun.com/products/10215) or a cable to connect the Serial Basic to the development computer.
 
+<p align="center" valign="middle">
+   <img src="https://cdn.sparkfun.com//assets/parts/1/3/5/6/7/15170-SparkFun_Edge_Development_Board_-_Apollo3_Blue-01a.jpg"  width=80>  
+   <img src="https://cdn.sparkfun.com//assets/parts/1/4/1/6/5/15570-Himax_Imaging_Camera-01.jpg"  width=80>   
+   <img src="https://cdn.sparkfun.com//assets/parts/1/1/8/8/8/14050-01.jpg"  width=80>
+   <img src="https://cdn.sparkfun.com//assets/parts/4/5/5/8/10215-01.jpg"  width=80>  
+</p>
+
 Software Setup
 --------------
 The examples in this repository are for use and execution within the Arduino development environment. This section details the steps required to setup Arduino for the examples.
 
-***Install Arduino***
+### Install Arduino
 
 <img src="https://www.arduino.cc/en/pub/skins/arduinoWide/img/ArduinoAPP-01.svg"  align="right" width=70>
 
@@ -37,17 +45,34 @@ Arduino is avilable for a variety of platforms. To ensure compatiblity with the 
 
 The Arduino application is available for a variety of platforms and is available online from Arduino. Download the application from the Arduino website using this [link](https://www.arduino.cc/en/Main/Software).
 
-***Install the TensorFlowLite Library***
+### Install the TensorFlowLite Library
 
-The examples execute using the TensorFlowLight Arduino libary, which is installed using the Arduino Library Manager. 
+The examples utilize the TensorFlowLight Arduino libary, which is installed using the Arduino Library Manager. 
 
 To install this library, use the following steps:
+<img src="resource/TFL_Install.png"  align="right" width=350>
 * In Arduino, select the "Manage Libraries..." menu item. ***Tools > Manage Libraries...***
 * In the Library Manager interface, search for tensorflow
 * Select the library **Arduino_TensorFlowLite** by **TensorFlow Authors**
 * Select the *non-precompiled* version of the libary
 * Select the **Install** button to install the library
 * Once the install is completed, close the Arduino *Library Manager* dialog.
+
+### Install the SparkFun Boards Package
+
+Load the SparkFun Boards package into the Arduino Board Manger.
+
+To install package, use the following steps:
+
+* In Arduino, open the Preferences menu item. ***File > Preferences***, (macOS) ***Arduino > Preferences***
+* Add the following path to the ***Additional Boards Manager URLs:*** path in preferences.
+
+Copy: ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
+
+* Select the ***OK*** button to save the preferences.
+
+<img src="resource/BoardPacakgeURL.png"  width=500 alight="right">
+
 
 Getting Started
 ----------------
