@@ -67,11 +67,14 @@ To install package, use the following steps:
 * In Arduino, open the Preferences menu item. ***File > Preferences***, (macOS) ***Arduino > Preferences***
 * Add the following path to the ***Additional Boards Manager URLs:*** path in preferences.
 
-Copy: ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
+  ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
+
+<img src="resource/BoardPacakgeURL.png"  align="right" width=500>
 
 * Select the ***OK*** button to save the preferences.
 
-<img src="resource/BoardPacakgeURL.png"  width=500 alight="right">
+#### Install the SparkFun Artemis Boards Package 
+
 
 
 Getting Started
