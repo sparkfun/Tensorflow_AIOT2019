@@ -39,7 +39,7 @@ The examples in this repository are for use and execution within the Arduino dev
 
 ### Install Arduino
 
-<img src="https://www.arduino.cc/en/pub/skins/arduinoWide/img/ArduinoAPP-01.svg"  align="right" width=70>
+<img src="https://www.arduino.cc/en/pub/skins/arduinoWide/img/ArduinoAPP-01.svg"  align="left" width=40>
 
 Arduino is avilable for a variety of platforms. To ensure compatiblity with the demos in this repository, the latest version should be installed.
 
