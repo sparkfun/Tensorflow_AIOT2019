@@ -78,7 +78,7 @@ To install package, use the following steps:
 Once the location of the SparkFun boards package is set in the preferences, the board definition package for the SparkFun Apollo3 boards must be installed. 
 
 To install package, use the following steps:
-
+<img src="resource/BoardManager.png"  align="right" width=350>
 * In Arduino, open the Preferences menu item. ***Tools > Board "..." > Manage Boards...***
 * Search for *SparkFun*
 * Select the **SparkFun Apollo3 Boards" package 
