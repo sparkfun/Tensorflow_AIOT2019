@@ -117,6 +117,9 @@ Running an Example
   * ```micro_speech```
 * Select the ```SparkFun Edge``` board (Tools->Board under 'SparkFun Apollo3')
 * Select the proper port to connect with the baord (Tools->Port)
+  * Windows - COM Port
+  * Linux - /dev/ttyUSB*, where * is a number. NOTE: Permissions on this device needs to include user read and write (chmod 666)
+  * macOS - /dev/cu.usbserial* 
 * Change the **Bootloader** from *Ambiq Secure Bootloader (Default)* to *SparkFun Variable Loader (Enable w/ Artemis Bootloader)* (Tools->Bootloader)
   * (Your boards have received the upgraded bootloader already)
 * Change the ```SVL Baud Rate``` from *921600* to *460800*
