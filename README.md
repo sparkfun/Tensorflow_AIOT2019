@@ -17,6 +17,11 @@ The following examples are included in the repository:
 * person_detection - Using an attached camera to detect the presence of a person in an image. 
 * magic_wand - Using the on-board accelerometer to detect gestures (movement of the breakout board) 
 
+## Contents
+
+* [Required Hardware ](#required-hardware)
+* [Software Setup](#software-setup)
+
 Required Hardware
 -----------------
 
@@ -56,7 +61,14 @@ To install this library, use the following steps:
 * Select the library **Arduino_TensorFlowLite** by **TensorFlow Authors**
 * Select the *non-precompiled* version of the libary
 * Select the **Install** button to install the library
-* Once the install is completed, close the Arduino *Library Manager* dialog.
+
+### Install the Himax HM01B0 Camera Library
+
+With the Library Manager dialog still displayed, install the Himax camera driver.
+* Search for ***himax***
+* Select the **SparkFun Himax HM01B0 Camera"** Library and then select the **Install** button.  
+
+Once the install is completed, close the Arduino *Library Manager* dialog.
 
 ### Install the SparkFun Boards Package
 
