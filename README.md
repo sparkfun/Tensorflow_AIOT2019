@@ -75,6 +75,16 @@ To install package, use the following steps:
 
 #### Install the SparkFun Artemis Boards Package 
 
+Once the location of the SparkFun boards package is set in the preferences, the board definition package for the SparkFun Apollo3 boards must be installed. 
+
+To install package, use the following steps:
+
+* In Arduino, open the Preferences menu item. ***Tools > Board "..." > Manage Boards...***
+* Search for *SparkFun*
+* Select the **SparkFun Apollo3 Boards" package 
+* Close the dialog
+* Select the SparkFun Edge Board. ***Tools > Boards "..." > SparkFun Edge***
+* Set the Bootloader to the ***SparkFun Variable Loader***. ***Tools > Bootloader "..." > SparkFun Variable Loader..."
 
 
 Getting Started
