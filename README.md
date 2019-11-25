@@ -21,6 +21,7 @@ The following examples are included in the repository:
 
 * [Required Hardware ](#required-hardware)
 * [Software Setup](#software-setup)
+* [Running an Example](#running-an-example)
 
 Required Hardware
 -----------------
@@ -98,34 +99,18 @@ To install package, use the following steps:
 * Select the SparkFun Edge Board. ***Tools > Boards "..." > SparkFun Edge***
 * Set the Bootloader to the ***SparkFun Variable Loader***. ***Tools > Bootloader "..." > SparkFun Variable Loader..."
 
+Running an Example
+------------------
 
-Getting Started
-----------------
-
-### Hardware
+### Configure the Hardware
+* If this is a camera example, make sure the camera is installed on the Edge board.
 * Plug USB cable into computer
-* Connect CH340C adapter to USB cable
+* Connect Serial to USB adapter to USB cable
 * Plug in Edge board to adpater
 
-### Software
-* Install [Arduino](https://www.arduino.cc/en/Main/Software)
-* Install SparkFun Apollo3 Arduino Core
-  * Add the SparkFun boards ```.json``` file to Arduino board manager URLs
-    * Open Arduino preferences (File->Preferences)
-    * Copy ```https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json```
-    * Paste in the ```Additional Boards Manager URLs:``` field
-  * Install via Arduino Boards Manager  
-    * Open the Boards Manager (Tools->Board->Boards Manager)
-    * Search for ```apollo3```
-    * Click ```install```
-* Install library dependencies
-  * Open the Arduino Library Manager (Sketch->Inlude Library->Manage Libraries)
-  * ```Arduino_TensorFlowLite``` Arduino library
-    * Search for ```Arduino_TensorFlowLite```
-    * Install the top result using the version ```Version 1.15.0-ALPHA``` (**not** the *precompiled* option)
-  * ```SparkFun Himax HM01B0 Camera``` library
-    * Search for ```SparkFun Himax HM01B0 Camera```
-    * Install ```v0.0.1```
+
+### Configure the Software
+* Install and setup Arduino as described [above](#software-setup).
 * Download (or clone) this repo to favorite location
 * Open Arduino
 * Open an example from this repo through Arduino by clicking on a ```.ino``` file in one of the example directories
