@@ -124,7 +124,7 @@ Running an Example
 ### Upload
 * Compile with the ```Verify``` button (checkmark symbol)
 * Upload with the ```Upload``` button (arrow symbol)
-  * If uploading fails try lowring the bootloader baud rate
+  * If uploading fails try lowering the bootloader baud rate
 
 ### Serial Monitor
 * Open the Serial Monitor by clicking on the magnifying glass icon (top right) or (Tools->Serial Monitor)
