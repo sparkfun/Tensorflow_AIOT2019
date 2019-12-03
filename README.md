@@ -133,3 +133,9 @@ Running an Example
 
 ### Serial Monitor
 * Open the Serial Monitor by clicking on the magnifying glass icon (top right) or (Tools->Serial Monitor)
+
+## Training a Speech Model
+The micro speech example has a model that is trained to recognize "Yes" and "No". An example of how to train a new model based on Google collected sample phrases is included in the tensorflow micro_speech example repository. The method listed utilizes Google Colaboratory to run the training session - an Jypter notebooks based system that presents a Python based notebook and abstracts the management of compute resources.
+
+The notebook to run the training for this example is contained in the tensorflow github repository at this [location.](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/train_speech_model.ipynb)
+
