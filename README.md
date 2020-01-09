@@ -94,7 +94,7 @@ To install package, use the following steps:
 <img src="resource/BoardManager.png"  align="right" width=350>
 * In Arduino, open the Preferences menu item. ***Tools > Board "..." > Manage Boards...***
 * Search for *SparkFun*
-* Select the **SparkFun Apollo3 Boards" package 
+* Select the **SparkFun Apollo3 Boards" package (use v1.0.24 or later)
 * Close the dialog
 * Select the SparkFun Edge Board. ***Tools > Boards "..." > SparkFun Edge***
 * Set the Bootloader to the ***SparkFun Variable Loader***. ***Tools > Bootloader "..." > SparkFun Variable Loader..."
